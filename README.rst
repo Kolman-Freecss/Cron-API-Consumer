@@ -2,18 +2,38 @@
 REST Api Consumer module
 =====
 
-
 Basic example of REST API Consumer cron service running in docker.
 
-
-Requirements:
+Getting Started
 --------
 
-- Python interpreter v3.10
-- Docker installed
+| File | Description |
+|---|---|
+| `Dockerfile` | [Docker] instructions how to build image. |
+| `app.py` | [Python] application. |
+| `entrypoint.sh` | [Docker] instructions how to run the container.  |
+| `run.sh` | Bash script to run the application. |
+| `schedule.txt` | Configuration for [cron] scheduler. |
 
 
-Installation steps:
+Requirements
+--------
+
+- Python version v3.10
+- Docker
+
+
+Installation
 --------
 
 1. Clone this repository
+2. Run `docker build -t api-consumer .` in the root directory of the project
+3. Run `docker run -dp 3000:3000 api-consumer`
+
+Notes
+--------
+Tested only in Windows 10.
+
+License
+--------
+`MIT <https://github.com/Kolman-Freecss/Cron-API-Consumer/blob/master/LICENSE>`_

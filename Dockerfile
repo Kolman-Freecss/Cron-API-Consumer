@@ -10,14 +10,14 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y cron
 RUN pip install requests
 
 # Set up working directory
-ENV WORKDIR=/app
+ENV WORKDIR=./
 WORKDIR ${WORKDIR}
 
 # Copy content from current directory into image
 COPY . .
 
 # Update permissions
-RUN chmod +x $WORKDIR/app.py $WORKDIR/run.sh $WORKDIR/entrypoint.sh
+RUN chmod +x $WORKDIR/foo/consumer.py $WORKDIR/run.sh $WORKDIR/entrypoint.sh
 
 # Define default run command
 CMD = ["bash"]
