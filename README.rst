@@ -4,17 +4,6 @@ REST Api Consumer module
 
 Basic example of REST API Consumer cron service running in docker.
 
-Getting Started
---------
-
-| File | Description |
-|---|---|
-| `Dockerfile` | [Docker] instructions how to build image. |
-| `app.py` | [Python] application. |
-| `entrypoint.sh` | [Docker] instructions how to run the container.  |
-| `run.sh` | Bash script to run the application. |
-| `schedule.txt` | Configuration for [cron] scheduler. |
-
 
 Requirements
 --------
